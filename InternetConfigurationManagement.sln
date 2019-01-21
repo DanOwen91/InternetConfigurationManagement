@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternetConfigurationManagement", "InternetConfigurationManagement\InternetConfigurationManagement.csproj", "{D6B414CE-E0C4-4558-8C98-5E2CF4B8B545}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DownloadSpeedChecker", "DownloadSpeedChecker\DownloadSpeedChecker.csproj", "{52EAB2C4-F00C-4217-896D-94CFD4B0A2F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest.ICM", "UnitTest.ICM\UnitTest.ICM.csproj", "{AF68D68F-C018-4E9C-B4CF-4FEE407B9AE8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{D6B414CE-E0C4-4558-8C98-5E2CF4B8B545}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6B414CE-E0C4-4558-8C98-5E2CF4B8B545}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6B414CE-E0C4-4558-8C98-5E2CF4B8B545}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52EAB2C4-F00C-4217-896D-94CFD4B0A2F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52EAB2C4-F00C-4217-896D-94CFD4B0A2F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52EAB2C4-F00C-4217-896D-94CFD4B0A2F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52EAB2C4-F00C-4217-896D-94CFD4B0A2F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF68D68F-C018-4E9C-B4CF-4FEE407B9AE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF68D68F-C018-4E9C-B4CF-4FEE407B9AE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF68D68F-C018-4E9C-B4CF-4FEE407B9AE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF68D68F-C018-4E9C-B4CF-4FEE407B9AE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
