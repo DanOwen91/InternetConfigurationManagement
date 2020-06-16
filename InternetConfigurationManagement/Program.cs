@@ -9,13 +9,15 @@ namespace InternetConfigurationManagement
 
         static void Main(string[] args)
         {
-            decimal DownloadSpeed;
+            double DownloadSpeed;
 
             string read = string.Empty;
             while (read != "q")
             {
                 Console.WriteLine("1: Find Download Speed");
                 Console.WriteLine("2: Find Dowload speed across ethernet");
+                Console.WriteLine("3: Renew IP address");
+
 
 
                 Console.WriteLine("q: Exit");
@@ -29,8 +31,12 @@ namespace InternetConfigurationManagement
                         Console.WriteLine($"Download speed {DownloadSpeed} Mb/s");
                         break;
                     case "2":
-                        double dowloadSpeed = InternalEthernetSpeedTest.SpeedAcrossEthernet();
-                        Console.WriteLine($"Speed across the network interface {dowloadSpeed} Mb/s");
+                        DownloadSpeed = InternalEthernetSpeedTest.SpeedAcrossEthernet();
+                        Console.WriteLine($"Speed across the network interface {DownloadSpeed} Mb/s");
+                        break;
+                    case "3":
+                        DownloadSpeed = InternalEthernetSpeedTest.SpeedAcrossEthernet();
+                        Console.WriteLine($"Speed across the network interface {DownloadSpeed} Mb/s");
                         break;
                     default:
                         break;

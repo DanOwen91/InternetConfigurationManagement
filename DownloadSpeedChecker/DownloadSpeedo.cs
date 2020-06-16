@@ -7,7 +7,7 @@ namespace DownloadSpeedChecker
 {
     public class DownloadSpeedo
     {
-        public decimal DownloadSpeed { get => DownloadSpeedCalc(new Uri("http://ipv4.download.thinkbroadband.com/10MB.zip"));}
+        public double DownloadSpeed { get => DownloadSpeedCalc(new Uri("http://ipv4.download.thinkbroadband.com/10MB.zip"));}
 
 
         /// <summary>
@@ -15,7 +15,7 @@ namespace DownloadSpeedChecker
         /// </summary>
         /// <param name="uri"></param>
         /// <returns></returns>
-        private decimal DownloadSpeedCalc(Uri uri)
+        private double DownloadSpeedCalc(Uri uri)
         {
             
             Stopwatch watch = new Stopwatch();
@@ -39,7 +39,7 @@ namespace DownloadSpeedChecker
             decimal bits = ((Convert.ToDecimal(byteSize.Result.LongLength) * 8) / 1000000);
 
             //Time is in milliseconds, so convert to seconds and multiply to get the download speed
-            return Math.Round(bits * 1000 / watch.ElapsedMilliseconds, 0);
+            return (double)Math.Round(bits * 1000 / watch.ElapsedMilliseconds, 0);
         }
 
         public static DownloadSpeedo FactoryDownloadSpeedo()
