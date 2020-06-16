@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsoleSpinner.cs" />
     <Compile Include="DownloadSpeedo.cs" />
+    <Compile Include="InternalEthernetSpeedTest.cs" />
     <Compile Include="ReadRequests.cs" />
     <Compile Include="HttpController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

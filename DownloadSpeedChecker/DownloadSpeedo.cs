@@ -7,7 +7,8 @@ namespace DownloadSpeedChecker
 {
     public class DownloadSpeedo
     {
-        public decimal DownloadSpeed { get => DownloadSpeedCalc(new Uri("http://ipv4.download.thinkbroadband.com/50MB.zip"));}
+        public decimal DownloadSpeed { get => DownloadSpeedCalc(new Uri("http://ipv4.download.thinkbroadband.com/10MB.zip"));}
+
 
         /// <summary>
         /// Find the download speed by downloading a some large files.
@@ -26,7 +27,12 @@ namespace DownloadSpeedChecker
             watch.Start();
             Task<byte[]> byteSize = GetRequest.init(uri);
 
-            byteSize.Wait();
+            while (!byteSize.IsCompleted)
+            {
+                Thread.Sleep(500);
+                ConsoleSpiner.Spin();
+            }
+
             watch.Stop();
 
             //Convert bytes to bits, and times to get it in Mb
