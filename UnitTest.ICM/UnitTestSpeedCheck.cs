@@ -6,6 +6,7 @@ namespace UnitTest.ICM
 {
     public class UnitTestSpeedCheck
     {
+        //Todo: fix test
         [Fact]
         public void DownloadSpeed()
         {
